@@ -1,0 +1,42 @@
+<html>
+    <head>
+    <title>Эфир НТВ</title>
+ <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139550621-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139550621-5');
+</script>
+
+</head>
+    <body>
+
+
+<!-- HTML -->
+<video id='rta'  class="video-js vjs-default-skin vjs-fill vjs-big-play-centered" autoplay controls>
+<source type="application/x-mpegURL" src="https://ntv-hls-orig.cdnvideo.ru/ntv0_hd/index.m3u8">
+<source type="application/dash+xml" src="https://ntv-mpd-orig.cdnvideo.ru/ntv0_hd/index.mpd">
+</video>
+
+
+<!-- JS code -->
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+<script>
+
+var player = videojs('rta');
+player.play();
+
+</script>
+
+
+ 
+  </body>
+</html>
